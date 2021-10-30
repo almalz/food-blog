@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Story, Meta } from '@storybook/react'
 
-import Button, { Props } from './Button'
+import Button, { ButtonProps } from '.'
 
 export default {
   component: Button,
@@ -10,7 +10,7 @@ export default {
 } as Meta
 
 //👇 We create a “template” of how args map to rendering
-const Template: Story<Props> = (args) => <Button {...args} />
+const Template: Story<ButtonProps> = (args) => <Button {...args} />
 
 export const Primary = Template.bind({})
 
