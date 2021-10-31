@@ -27,7 +27,11 @@ module.exports = {
           lighter: '#D6DFB9',
           text: '#FFF',
         },
-        link: '#254A8F',
+        link: {
+          regular: '#254A8F',
+          light: '#366CD1',
+          dark: '#1E3C74',
+        },
       },
     },
   },

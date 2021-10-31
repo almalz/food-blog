@@ -5,6 +5,7 @@ export type LinkProps = {
   href?: string
   target?: HTMLAttributeAnchorTarget
   referrerpolicy?: ReferrerPolicy
+  className?: string
 }
 
 const Link: React.FC<LinkProps> = ({
@@ -12,9 +13,10 @@ const Link: React.FC<LinkProps> = ({
   href,
   target,
   referrerpolicy,
+  className,
 }) => (
   <a
-    className={`no-underline font-semibold text-link hover:font-bold cursor-pointer transition`}
+    className={`${className} text-opacity-75 no-underline font-semibold text-link-light hover:text-link-regular hover:text-opacity-100 cursor-pointer transition`}
     href={href}
     target={target}
     referrerPolicy={referrerpolicy}

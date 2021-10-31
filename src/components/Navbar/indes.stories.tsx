@@ -14,4 +14,19 @@ const Template: Story<NavbarProps> = (args) => <Navbar {...args} />
 
 export const Primary = Template.bind({})
 
-Primary.args = {}
+Primary.args = {
+  items: [
+    {
+      label: `Recettes`,
+    },
+    {
+      label: `Blog`,
+    },
+    {
+      label: `Equipements`,
+    },
+    {
+      label: `Profil`,
+    },
+  ],
+}

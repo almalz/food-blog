@@ -11,9 +11,9 @@ export type NavbarProps = {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ items }) => (
-  <nav>
+  <nav className="inline-flex">
     {items.map((item) => (
-      <div>
+      <div className="mx-4">
         <Link href={item.href}>{item.label}</Link>
       </div>
     ))}
